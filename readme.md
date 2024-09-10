@@ -1,5 +1,11 @@
 # Quantum Mechanical Keyboard Firmware
 
+## Branch
+
+This branch is a diff on top of the upstream qmk branch.
+
+Keep the `master` branch in sync with the upstream and then rebase `diff` ontop of it.
+
 ## Keebio - Iris CE update steps
 
 1. Go to [config.qmk.fm](https://config.qmk.fm/)
