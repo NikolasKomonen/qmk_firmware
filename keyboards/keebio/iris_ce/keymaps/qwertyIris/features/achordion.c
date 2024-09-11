@@ -392,5 +392,12 @@ __attribute__((weak)) bool achordion_chord(uint16_t tap_hold_keycode,
             if (other_keycode == KC_BSPC) { return true; }
             break;
   }
+
+  // Allow same-hand holds with non-alpha keys (from the achodion web article).
+  // This allows me to do something like the GUI hold on the Z key
+  // and then press the layer switch key as expected. Without this,
+  // when I held Z then pressed layer switch it typed a 'z'
+  if (other_keycode > KC_Z) { return true; }
+
   return achordion_opposite_hands(tap_hold_record, other_record);
 }
