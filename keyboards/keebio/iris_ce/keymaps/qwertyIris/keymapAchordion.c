@@ -1,4 +1,4 @@
-// Paste this in to the end of `./keymap.c`
+// Pasted from `./keymapAchordion.c`
 // Code from here: https://getreuer.info/posts/keyboards/achordion/index.html#add-achordion-to-your-keymap
 
 #include "features/achordion.h"
