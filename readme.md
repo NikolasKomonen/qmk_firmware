@@ -15,6 +15,10 @@ Keep the `master` branch in sync with the upstream and then rebase `diff` ontop 
 1. Upload the JSON: `./keyboards/keebio/iris_ce/keymaps/qwertyIris/qwerty_homerow_mod.json`
 1. Make your edits
 1. Download the JSON to the same location you uploaded it from (overwrite the old file)
+1. Use the script `./compileIris` which does the steps in the Manual Commands down below
+
+### Manual Commands
+
 1. Compile the JSON to C
     - `qmk json2c keyboards/keebio/iris_ce/keymaps/qwertyIris/qwerty_homerow_mod.json -o keyboards/keebio/iris_ce/keymaps/qwertyIris/keymap.c`
 1. Copy the content of `keymapAchordion` into the end of `keymap.c` in the folder `./keyboards/keebio/iris_ce/keymaps/qwertyIris`
